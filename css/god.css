@@ -1,0 +1,87 @@
+
+.navItem{
+    margin: auto 0em auto 1em;
+    font-weight: bold;
+}
+#logoPic{
+    width: 6em;
+}
+
+#chyron_div{
+    margin: 0em;
+    padding: 0em;
+    background-color: #17a2b8;
+    color: cornsilk;
+}
+.shadow777{
+    box-shadow: 3px 3px 10px #777;
+    -webkit-box-shadow: 3px 3px 10px #777;
+    -moz-box-shadow: 3px 3px 10px #777; 
+}
+.game_icon{
+    /* margin: 0% 2%; */
+    margin-top: 1em;
+    
+    
+}
+.home_pic{
+    width: 100%;
+    border-radius: 0.3em;
+}
+
+/* 簡介 */
+#intro{
+    margin-top: 5%;
+    padding: 10px;    
+    border-radius: 1em;
+    font-size: 0.96em;
+    opacity: 0.82;
+}
+
+
+/* 頁腳 */
+
+.footer {
+    background-color: #e6e6e6;
+    padding: 15px 0;
+}
+
+.footer_logo img {
+    max-width: 100px;
+}
+
+.footer_list ul {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.2rem;
+    color: #5e5e5e;
+}
+
+.footer_copyright {
+    font-size: 10px;
+}
+
+.modal{
+    margin-top: 10%;
+}
+.m_item{
+    margin-bottom: 1em;
+}
+#banner_sec{
+    margin-top: 1em;
+}
+
+/* 將輪播指標改為點 */
+/* .carousel-indicators li {
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+} */
+
+#homeMarquee {
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background: #17a2b8;
+    color: azure;
+}

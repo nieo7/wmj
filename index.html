@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+
+<meta charset="UTF-8">
+<title>尼奧麻將王</title>    
+    
+<meta name="description" content="尼奧麻將王">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.6, maximum-scale=2.0, user-scalable=no"/>
+
+<link rel="icon" href="favicon.ico">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet" media="all">
+
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/jquery.marquee.js"></script>
+
+<script src="js/main.js"></script>
+    
+</head>
+
+<body>
+  <header>
+    <!-- nav 導覽列 ============================================================================ -->
+    <!-- navbar 表示這是一個 flex-box -->
+    <!-- navbar-expand-md 負責轉手機版的寬度, lg:991以下轉手機版, md:767以下轉手機版, sm:575以下轉手機版 -->
+    <!-- navbar-dark讓文字為白色, bg-dark負責背景顏色為暗底 -->
+    <nav class="navbar navbar-expand navbar-dark bg-info">
+      <!--  這是 LOGO 文字或圖片  -->
+      <a href="#" class="navbar-brand mr-auto">
+        <!-- <img src="img/logo.png" id='logoPic'/> -->
+        尼奧麻將王
+      </a>
+        <!-- 這是一組靠右側的選單 ********** -->
+        <ul class="navbar-nav justify-content-end" style="display: none;">
+          <li class="nav-item">
+            <button type="button" id="loginBtn" class="navItem" data-toggle="modal" data-target="#modal_login">登入</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" id="regstBtn" class="navItem"  data-toggle="modal" data-target="#modal_register">註冊</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" id="serviceBtn" class="navItem" name="productSec">客服</button>
+          </li>
+        </ul>
+    </nav>
+    </header>
+
+</div>
+<div id="homeMarquee" class="shadow777" style="display: none;">最新消息：跑馬燈訊息跑馬燈訊息跑馬燈訊息跑馬燈訊息跑馬燈訊息跑馬燈訊息跑馬燈訊息</div>
+
+<div id="warm_0">
+  <div class="warm">
+
+    尼奧麻將王由於資料庫遭受攻擊破壞，暫時無法對外營運。由於系統遭原工程師埋入後門，
+    以致於修復之後仍持續被破壞，因此目前本公司正積極完成新系統的建置，希望藉由新系統的上線，讓玩家可以早日恢復遊戲樂趣！</br>
+    造成玩家的不便，尼奧科技至上萬分歉意！並請各位玩家期待新的遊戲平台！
+  </div>
+</br>
+  本次破壞行為，與之前被警方逮捕的破壞行為相仿，推測應為本公司已離職之前工程師「林志全」所為，</br>
+
+  林志全之前的犯罪行為，因受理檢察官證據之認定以及法律見解不同的緣故，並未獲得公訴罪之起訴，因此又再度犯案，如有玩家能提供確實證據以便再進行報案追查，本公司將提供報酬，以停止林志全繼續犯案的行為。感謝玩家們的協助，並再次對玩家致上歉意！</br>
+
+  林志全個人資料如下（為避免洩漏個資，僅提供部分資訊）</br>
+
+  身份證號碼：E1221031XX</br>
+  戶籍地址：新北市板橋區長江路二段５X 號１X樓</br>
+
+
+</div>
+
+
+
+
+<section id="banner_sec" class="shadow777" style="display: none;">
+  <!-- slide 讓圖片用滑動的方式輪播 -->
+  <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+    <!-- 輪播圖片 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- class="w-100" 讓圖片可以自適設備螢幕的大小 -->
+        <image class="w-100" src="img/home/h_0.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <image class="w-100" src="img/home/h_1.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <image class="w-100" src="img/home/h_2.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <image class="w-100" src="img/home/h_3.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <image class="w-100" src="img/home/h_4.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <image class="w-100" src="img/home/h_5.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <image class="w-100" src="img/home/h_6.jpg" alt="">
+      </div>
+    </div>
+    <!-- 圖片上一頁按鈕 -->
+    <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <!-- 圖片下一頁按鈕 -->
+    <a href="#carousel-controller" data-slide="next" class="carousel-control-next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    <!-- 下方點點 -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-controller" data-slide-to="0" class="active">1</li>
+      <li data-target="#carousel-controller" data-slide-to="1"></li>
+      <li data-target="#carousel-controller" data-slide-to="2"></li>
+      <li data-target="#carousel-controller" data-slide-to="3"></li>
+      <li data-target="#carousel-controller" data-slide-to="4"></li>
+      <li data-target="#carousel-controller" data-slide-to="5"></li>
+      <li data-target="#carousel-controller" data-slide-to="6"></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 遊戲目錄 -->
+<section id="gameMenuSec" style="display: none;">
+<div class="container ">  
+  <div class="justify-content-center">
+
+    <h4 class="fGreen">一站式滿足所有需求</h4>
+    <div class="row con ">
+      <div class="col-md-12 intro fGray ttlf ">
+        玩法一應俱全、賽事應有盡有、老虎機賠率最高、7X24小時的貼心客服、國家級的安全資金管理、各種專業投註工具、豐富的獎池獎金，多種支付渠道服務，壹站式滿足您的所有需求！
+      </div>
+    </div>
+    
+    <div class="row con">
+      <image class="col-6 col-sm-4 col-md-3 col-lg-2 game_icon" src="img/game/g_0.png"></image>
+      <image class="col-6 col-sm-4 col-md-3 col-lg-2 game_icon" src="img/game/g_1.png"></image>
+      <image class="col-6 col-sm-4 col-md-3 col-lg-2 game_icon" src="img/game/g_2.png"></image>
+      <image class="col-6 col-sm-4 col-md-3 col-lg-2 game_icon" src="img/game/g_3.png"></image>
+      <image class="col-6 col-sm-4 col-md-3 col-lg-2 game_icon" src="img/game/g_4.png"></image>
+      <image class="col-6 col-sm-4 col-md-3 col-lg-2 game_icon" src="img/game/g_5.png"></image>
+      <image class="col-6 col-sm-4 col-md-3 col-lg-2 game_icon" src="img/game/g_6.png"></image>
+      <image class="col-6 col-sm-4 col-md-3 col-lg-2 game_icon" src="img/game/g_7.png"></image>
+      <image class="col-6 col-sm-4 col-md-3 col-lg-2 game_icon" src="img/game/g_8.png"></image>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- 模態框（Modal） -->
+<div class="modal fade" id="modal_login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="loginLabel">
+              會員登入
+            </h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                &times;
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 m_item">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">手機號碼</button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="請輸入您的手機號碼">
+                </div>
+              </div>
+            
+              <div class="col-12 m_item">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">登入密碼</button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="請輸入您的密碼">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-block">
+                  確定登入
+              </button>
+          </div>
+      </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+
+
+<!-- 模態框（Modal） -->
+<div class="modal fade" id="modal_register" tabindex="-1" role="dialog" aria-labelledby="singupLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="registerLabel">
+              會員註冊
+            </h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                &times;
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 m_item">
+                <div class="input-group">
+                  <button class="btn btn-default" type="button">邀請碼　</button>
+                  <input type="text" class="form-control" placeholder="無邀請碼可不填寫">
+                </div>
+              </div>
+              
+              <div class="col-12 m_item">
+                <div class="input-group">
+                  <button class="btn btn-default" type="button">手機號碼</button>
+                  <input type="text" class="form-control" placeholder="請輸入您的手機號碼">
+                </div>
+              </div>
+              
+              <div class="col-12 m_item">
+                <div class="input-group">
+                    <button class="btn btn-default" type="button">驗證碼　</button>
+                    <input type="text" class="form-control" placeholder="請輸入驗證碼">
+                    <button type="button" class="btn btn-primary">
+                      獲取驗證碼
+                    </button>
+                </div>
+              </div>
+
+            </div>
+            </div>
+
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-block">
+                  立即註冊
+              </button>
+          </div>
+      </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+
+
+
+
+<!-- 頁腳 -->
+<footer class="footer" style="display: none;">
+  <div class="container">
+      <div class="row justify-content-center footer_list">
+          <!-- <div class="col-md-6 col-sm-12 footer_logo">
+              <img src="img/logo.png">
+          </div> -->
+          <!-- <div class="col-md-12 col-sm-12 footer_list "> -->
+              <ul>
+                  <li>神明娛樂城鄭重提示：彩票有風險，投注需謹慎，未滿18歲的青少年請自覺離開</li>
+              </ul>
+          <!-- </div> -->
+      </div>
+      <div class="row footer_copyright justify-content-center">
+          <p>Copyright©2020 神明娛樂城 版權所有 All Right Reserved</p>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>
